@@ -33,7 +33,7 @@ function general() {
                                             </svg> \
                                         </button> \
                                         <button type="button" id="donate" style="display: inline; float:right; margin-right: 30px;"> \
-                                            <img src="http://i.imgur.com/Cs3BBYI.png" style="max-width: 100px; max-height: 36px; min-height: 36px;"> \
+                                            <img src="https://avatars2.githubusercontent.com/u/58129516?s=200&v=4" style="max-width: 100px; max-height: 47px; min-height: 36px;"> \
                                         </button> \
                                     </div>  \
                                 </div> \
@@ -41,7 +41,6 @@ function general() {
         item.appendChild(element);
         console.log("WS Spam: Injected successfully ...");
         document.getElementById("spam").addEventListener("click", spam);
-        document.getElementById("donate").addEventListener("click", donate);
         clearInterval(timer);
     } else {
         console.log("WS Spam: Waiting for whatsapp to load...");
@@ -67,10 +66,4 @@ function spam() {
         dispatch(input, text);
         counter++;
     }
-}
-
-function donate() {
-    var url = "https://www.paypal.me/LukasReiner";
-    var win = window.open(url, '_blank');
-    win.focus();
 }
